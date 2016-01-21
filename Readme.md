@@ -9,10 +9,12 @@ npm install aws-sdk, npm install q
 ### Creating Client Instance
 
 var esClient = new EsClient({
-    endpoint: appCfg.aws.es.endpoint,
-    region: appCfg.aws.region,
-    profile: profile
+    endpoint: appCfg.aws.es.endpoint, // Your AWS elasticsearch service endpoint 
+    region: appCfg.aws.region, // Your AWS service region 'ap-northeast-1'
+    profile: profile  // your credential profile. Give undefined, to use IAM role based credential
 });
+
+###### Please Note : if using profile based creedential loading, put your credential at '~/.aws/credential' file. refer AWS Docs.
 
 ### Api Usage 
 
