@@ -1,4 +1,10 @@
+### importing custom client class
 
+var arrayUtils = require('./utils/arrayUtils');
+var EsClient = require('./utils/customElasticSearchClient');
+
+### Dependencies
+npm install aws-sdk, npm install q
 
 ### Creating Client Instance
 
